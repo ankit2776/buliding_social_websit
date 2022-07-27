@@ -1,5 +1,4 @@
 
-
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -129,6 +128,15 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'account.authentication.EmailAuthBackend',
+    'social_core.backends.facebook.FacebookOAuth2',
+    'social_core.backends.twitter.TwitterOAuth',
+    'social_core.backends.google.GoogleOAuth2'
 ]
 
 
+SOCIAL_AUTH_FACEBOOK_KEY = '423290939574931' # Facebook App ID
+SOCIAL_AUTH_FACEBOOK_SECRET = '49148c1e446fe9dff226' # Facebook App Secret
+SOCIAL_AUTH_TWITTER_KEY = 'Va0DZYkMBeyFsV0c6P1y6ORui' # Twitter API Key
+SOCIAL_AUTH_TWITTER_SECRET = '5ldzE8dTdlN11K2EDD6LiI2nyOeuWhWUfCAmTp9nqqQ0SnE9hX' # Twitter API Secret
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '643283667092-apu99lre8aqjhinqdti3c5s4c0pf0nat.apps.googleusercontent.com' # Google Consumer Key
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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' # Google Consumer Secret
