@@ -15,7 +15,7 @@ SECRET_KEY = 'vopu-cx!n31f=zn13k$p$iqqn=#e#a23=egf_vi0+fxn_&t42$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -29,6 +29,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'social_django',
+    'django_extensions',
+
 
 ]
 
