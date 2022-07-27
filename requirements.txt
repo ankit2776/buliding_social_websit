@@ -1,2 +1,5 @@
 django==3.0
 social-auth-app-django
+werkzeug
+django-extensions
+pyOpenSSL
