@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'social_django',
     'django_extensions',
+    'images.apps.ImagesConfig',
 
 
 ]
@@ -140,3 +141,6 @@ SOCIAL_AUTH_TWITTER_KEY = 'Va0DZYkMBeyFsV0c6P1y6ORui' # Twitter API Key
 SOCIAL_AUTH_TWITTER_SECRET = '5ldzE8dTdlN11K2EDD6LiI2nyOeuWhWUfCAmTp9nqqQ0SnE9hX' # Twitter API Secret
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '643283667092-apu99lre8aqjhinqdti3c5s4c0pf0nat.apps.googleusercontent.com' # Google Consumer Key
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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' # Google Consumer Secret
+
+
+
