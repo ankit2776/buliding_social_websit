@@ -6,6 +6,14 @@
         <link href="{% static 'css/base.css' %}" rel="stylesheet">
     </head>
     <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/
+    jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        {% block domready %}
+        {% endblock %}
+    });
+</script>
     <div id="header">
         {% if messages %}
         <ul class="messages">
